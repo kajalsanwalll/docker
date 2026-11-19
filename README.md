@@ -27,7 +27,7 @@ run -p 3000:3000 vite-test
 
 ## Running an image
 
-docker run <image_id> 
+docker run <image_id>    
       or  
 docker run -d <image_id>  //detach mode (run in the background)        
       or     
@@ -39,6 +39,22 @@ docker run -v $(pwd):/app <image_id>  // load my current working directory onto 
 or  
 docker run -it <image_id> sh  //an interactive shell of the container opens in our terminal 
 
+
+## Some more docker commands
+
+docker ps  // show me all containers     
+docker ps -a // show paused containers as well.   
+docker logs <container_id>    
+docker attach <container_id>.    
+docker stop <container_id>.    
+docker kill <container_id>.    
+docker stop $(docker ps -q) // stop all running containers.    
+docker start <container_id>.   
+docker restart <container_id>.   
+docker rm <container_id>.     
+docker rm -f <container_id>.    
+docker <container_id> prune  // delete the container completely.   
+docker cp <Container_id>:/path/to/file ./
 
 
 
