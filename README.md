@@ -55,6 +55,3 @@ docker rm <container_id>.
 docker rm -f <container_id>.    
 docker <container_id> prune  // delete the container completely.   
 docker cp <Container_id>:/path/to/file ./
-
-
-
