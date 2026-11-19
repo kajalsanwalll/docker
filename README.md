@@ -25,3 +25,20 @@ server: {
 run -p 3000:3000 vite-test
 
 
+## Running an image
+
+docker run <image_id> 
+      or  
+docker run -d <image_id>  //detach mode (run in the background)        
+      or     
+docker run --name my_container <image_id>  //giving specific container name   
+or  
+docker run -p 8080:80 <image_id>  //whatever on 80th container should be seen in my system at port 8080  
+or  
+docker run -v $(pwd):/app <image_id>  // load my current working directory onto the container  
+or  
+docker run -it <image_id> sh  //an interactive shell of the container opens in our terminal 
+
+
+
+
